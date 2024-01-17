@@ -1,0 +1,20 @@
+{% extends 'layouts/header_and_tags.html' %}
+{% load static %}
+{% load bootstrap4 %}
+
+{% block content %}
+
+    <div class="d-flex">
+        <h2 class="text-danger">Hot Questions</h2>
+        <a href="/" class="ms-4 mt-2 text-info">New Questions</a>
+    </div><br>
+
+    {% for item in content %}
+
+        {% include "include/question_item.html" %}
+
+    {% endfor %}
+
+    {% include "include/pagination.html" %}
+
+{% endblock content %}

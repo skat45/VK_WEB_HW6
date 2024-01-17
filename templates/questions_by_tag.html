@@ -1,0 +1,19 @@
+{% extends 'layouts/header_and_tags.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% load bootstrap4 %}
+
+{% block content %}
+
+    <h2>Search by tag: <span class="text-danger">{{ tag }}</span></h2>
+    <br>
+
+    {% for item in content %}
+
+        {% include "include/question_item.html" %}
+
+    {% endfor %}
+
+    {% include "include/pagination.html" %}
+
+{% endblock content %}

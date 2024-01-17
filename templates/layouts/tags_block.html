@@ -1,0 +1,38 @@
+{% load static %}
+
+<div>
+  <div class="p-3 border rounded">
+    <h3 style="text-align: center;">Popular Tags</h3>
+    <br>
+    <div style="display: flex; flex-wrap: wrap;">
+      {% for hot_tag in hot_tags %}
+        <a href="{% url "tag" hot_tag.name %}" class="m-4 btn btn-outline-primary">{{ hot_tag.name }}</a>
+      {% endfor %}
+    </div>
+  </div>
+  <br>
+  <div class="p-3 border rounded">
+    <h3 style="text-align: center;">Best Members</h3>
+    <br>
+    <div style="display: flex; flex-wrap: wrap;">
+      <a class="m-4 btn btn-outline-danger">Andrey_besss</a>
+      <a class="m-4 btn btn-outline-danger">Dmytro_Ermak</a>
+      <a class="m-4 btn btn-outline-danger">yyyyyyyep</a>
+      <a class="m-4 btn btn-outline-danger">Leranasiev</a>
+      <a class="m-4 btn btn-outline-danger">Kap14s</a>
+      <a class="m-4 btn btn-outline-danger">zdesbilaksenia</a>
+      <a class="m-4 btn btn-outline-danger">krenik_mc</a>
+      <a class="m-4 btn btn-outline-danger">obaunti</a>
+      <a class="m-4 btn btn-outline-danger">g1lshy_myau</a>
+      <a class="m-4 btn btn-outline-danger">Ifelsik</a>
+      <a class="m-4 btn btn-outline-danger">LordMelinano</a>
+      <a class="m-4 btn btn-outline-danger">webringoff</a>
+      <a class="m-4 btn btn-outline-danger">LEXAJUNA</a>
+      <a class="m-4 btn btn-outline-danger">timur_mur_muur</a>
+      <a class="m-4 btn btn-outline-danger">nemanjadesic</a>
+      <a class="m-4 btn btn-outline-danger">MishaKupriyanov</a>
+      <a class="m-4 btn btn-outline-danger">elvirabdullina</a>
+      <a class="m-4 btn btn-outline-danger">karakaev_dima</a>
+    </div>
+  </div>
+</div>
